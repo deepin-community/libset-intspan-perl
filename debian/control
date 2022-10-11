@@ -1,0 +1,21 @@
+Source: libset-intspan-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>,
+ Nicholas Bamber <nicholas@periapt.co.uk>, gregor herrmann <gregoa@debian.org>,
+ Florian Schlichting <fsfs@debian.org>
+Standards-Version: 3.9.4
+Homepage: https://metacpan.org/release/Set-IntSpan/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libset-intspan-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libset-intspan-perl.git
+
+Package: libset-intspan-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: module to manage sets of integers
+ The Set::IntSpan module manages sets of integers.
+ It is optimized for sets that have long runs of consecutive integers.
+ These arise, for example, in .newsrc files, which maintain lists of articles.
